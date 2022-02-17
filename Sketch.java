@@ -8,7 +8,7 @@ public class Sketch extends PApplet {
    */
   public void settings() {
 	// put your size call here
-    size(400, 400);
+    size(500, 500);
   }
 
   /** 
@@ -29,8 +29,17 @@ public class Sketch extends PApplet {
     line(150, 25, 270, 350);  
 
     stroke(255);
-    line(50, 125, 70, 50);  
+    line(50, 125, 70, 50); 
+
+    if (mousePressed) {
+      fill(0);
+    }  else {
+    fill(255);
+    }
+  ellipse(mouseX, mouseY, 80, 80);
+
   }
   
+ 
   // define other methods down here.
 }
